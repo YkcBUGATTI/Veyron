@@ -36,11 +36,12 @@
     <a href="#intro"><span class="idx">I</span>360° Orbit</a>
     <a href="#origins"><span class="idx">01</span>The Origins</a>
     <a href="#power"><span class="idx">02</span>The 1,001 PS W16</a>
-    <a href="#records"><span class="idx">03</span>The Records</a>
-    <a href="#bespoke"><span class="idx">04</span>Bespoke</a>
-    <a href="#legends"><span class="idx">05</span>Les Légendes</a>
-    <a href="#legacy"><span class="idx">06</span>Legacy · F.K.P.</a>
-    <a href="#specs"><span class="idx">07</span>Specifications</a>
+    <a href="#testing"><span class="idx">03</span>Development &amp; Testing</a>
+    <a href="#records"><span class="idx">04</span>The Records</a>
+    <a href="#bespoke"><span class="idx">05</span>Bespoke</a>
+    <a href="#legends"><span class="idx">06</span>Les Légendes</a>
+    <a href="#legacy"><span class="idx">07</span>Legacy · F.K.P.</a>
+    <a href="#specs"><span class="idx">08</span>Specifications</a>
   </nav>
   <p class="menu-overlay__sub">BUGATTI — VEYRON · MOLSHEIM</p>
 </div>
@@ -57,7 +58,9 @@
 <section class="hero" id="hero">
   <div class="hero__media">
     <div class="hero__parallax">
-      <img src="img/hero-front.jpg" alt="Bugatti Veyron 16.4">
+      <video autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.jpg">
+        <source src="video/hero-main.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="hero__veil"></div>
   </div>
@@ -74,33 +77,33 @@
 <!-- ============ Prologue · 360° Orbit + Birth (no chapter title) ============ -->
 <section class="chapter chapter--dark" id="intro" style="padding-top:0;">
   <div class="scrub">
-    <div class="scrub__track" data-dur="15">
+    <div class="scrub__track" data-dur="20">
       <div class="scrub__sticky">
         <video class="scrub__video" src="video/veyron-360.mp4" muted playsinline preload="none" poster="img/scrub-poster.jpg"></video>
         <img class="scrub__poster" src="img/scrub-poster.jpg" alt="Veyron family 360°">
         <div class="scrub__veil"></div>
         <div class="scrub__ui">
-          <span class="scrub__label">360° · Scroll-driven</span>
+          <span class="scrub__label">SUPER SPORT · Scroll-driven</span>
           <span class="scrub__prog mono">TIME <b>00:00</b></span>
         </div>
         <div class="scrub__texts">
           <div class="scrub__text is-on">
-            <h3>2008 · The Roadster Is Born<br><em>GRAND SPORT</em></h3>
-            <p>The Veyron family's first convertible: 1,001 PS with a removable roof — 407 km/h when closed.</p>
+            <h3>1,200 PS<br><em>THE PINNACLE OF THE W16</em></h3>
+            <p>2010: larger turbochargers, new intercoolers and NACA roof intakes — the Super Sport, performance at its peak.</p>
           </div>
           <div class="scrub__text">
-            <h3>2010 · 431.072 KM/H<br><em>SUPER SPORT</em></h3>
-            <p>1,200 PS and NACA roof intakes — the production-car world record, set in July 2010.</p>
+            <h3>431.072 KM/H<br><em>WORLD RECORD</em></h3>
+            <p>On 4 July 2010, Pierre-Henri Raphanel rewrote the production-car world record at Ehra-Lessien.</p>
           </div>
           <div class="scrub__text">
-            <h3>2012 · ROOF-DOWN RECORD<br><em>GRAND SPORT VITESSE</em></h3>
-            <p>The 1,200 PS roadster king — 408.84 km/h in 2013, the open-top production record.</p>
+            <h3>30 UNITS<br><em>LIMITED LEGEND</em></h3>
+            <p>Born from the record car — the peak of the Veyron family's performance, limited to 30 units.</p>
           </div>
         </div>
         <div class="scrub__meter" aria-hidden="true">
           <span class="scrub__deg"><b>0</b>°</span>
           <i></i>
-          <span>Rotation</span>
+          <span>Scroll progress</span>
         </div>
       </div>
     </div>
@@ -246,9 +249,7 @@
 <section class="chapter chapter--dark">
   <div class="wrap" style="margin-top:clamp(3rem,7vh,5rem);">
     <div class="chapter-video reveal">
-      <video autoplay muted loop playsinline preload="metadata" poster="video/w16-poster.jpg" data-autoview>
-        <source src="video/w16-engine.mp4" type="video/mp4">
-      </video>
+      <img src="img/w16-atelier.jpg" alt="Bare body in the light tunnel" loading="lazy">
       <div class="chapter-video__veil"></div>
       <div class="chapter-video__inner">
         <span class="chapter-video__no">W16 · THE 1,001 PS HEART</span>
@@ -389,6 +390,10 @@
       </div>
     </div>
 
+    <div class="prose prose--center reveal" style="margin-top:clamp(3.2rem,8vh,5.5rem);">
+      <p class="lead">Numbers that tell the story of this engine.</p>
+    </div>
+
     <div class="hcards reveal">
       <article class="hcard">
         <span class="hcard__year">W16 · 01</span>
@@ -416,10 +421,32 @@
       </article>
     </div>
 
-    <!-- Global testing: from Ladoux to Ehra-Lessien -->
-    <div class="prose prose--center reveal" style="margin-top:clamp(3rem,7vh,5rem);">
-      <p class="lead">In 2001, Loris Bicocchi took the first drive at Michelin's Ladoux test track —<br>at the time, the Veyron delivered twice the power of any other production car.</p>
-      <p>There was no reference point: beyond 400 km/h, the rules of aerodynamics, stability and braking changed entirely.<br>Hot zones, ice, high-speed ovals — the Veyron was validated in extreme conditions around the world, until it was ready for everyday drivers.</p>
+  </div>
+</section>
+
+<!-- ============ 03 Development & Testing ============ -->
+<div class="chapter-break" id="testing" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">03</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">03</span>
+    <div>
+      <h2>Development &amp; Testing<span class="latin">研发测试</span></h2>
+      <p class="chapter-break__sub">From Michelin's Ladoux to Ehra-Lessien — in heat, on ice and on high-speed ovals, the Veyron was validated until it was ready for any driver.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="wrap">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/test-bicocchi.jpg" alt="Loris Bicocchi's helmet" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">The First Drive · 2001</span>
+        <h3>Loris Bicocchi and the First Drive</h3>
+        <p>In 2001, a phone call changed Loris Bicocchi's career — the first drive took place at Michelin's Ladoux test track, in a red-and-black prototype. At the time, the Veyron delivered twice the power of any other production car; there was no reference point, and everything had to be rebuilt from scratch.</p>
+      </div>
     </div>
 
     <div class="quote reveal">
@@ -444,11 +471,11 @@
   </div>
 </section>
 
-<!-- ============ 03 The Records ============ -->
+<!-- ============ 04 The Records ============ -->
 <div class="chapter-break" id="records" data-chapter>
-  <span class="chapter-break__wm" aria-hidden="true">03</span>
+  <span class="chapter-break__wm" aria-hidden="true">04</span>
   <div class="chapter-break__inner">
-    <span class="chapter-break__no">03</span>
+    <span class="chapter-break__no">04</span>
     <div>
       <h2>The Records<span class="latin">Records</span></h2>
       <p class="chapter-break__sub">On 19 April 2005, a production car broke the 400 km/h barrier for the first time; over the following decade, the record was rewritten again and again — by the Veyron itself.</p>
@@ -459,8 +486,8 @@
 <section class="chapter">
   <div class="wrap">
     <div class="chapter-video reveal" style="margin-top:clamp(2rem,5vh,3.5rem);">
-      <video autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.jpg" data-autoview>
-        <source src="video/hero-main.mp4" type="video/mp4">
+      <video autoplay muted loop playsinline preload="metadata" poster="video/record-407-poster.jpg" data-autoview>
+        <source src="video/record-407.mp4" type="video/mp4">
       </video>
       <div class="chapter-video__veil"></div>
       <div class="chapter-video__inner">
@@ -538,37 +565,37 @@
     <div class="rec-line reveal">
       <div class="rec-line__item">
         <span class="rec-line__year">1998</span>
-        <div class="rec-line__name">EB 118<small>Concept Prelude · W18</small></div>
+        <div class="rec-line__name">EB 118<small>Concept · W18 6.3L · 1998</small></div>
         <span class="rec-line__val"><em>555</em> PS</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2001</span>
-        <div class="rec-line__name">First Firing of the W16<small>Molsheim · 1,000 PS achieved</small></div>
+        <div class="rec-line__name">W16 Prototype<small>Molsheim · First firing</small></div>
         <span class="rec-line__val"><em>1,000+1</em> PS</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2005</span>
-        <div class="rec-line__name">Veyron 16.4<small>Novacki · first past 400</small></div>
+        <div class="rec-line__name">Veyron 16.4 Coupé<small>Production car · Novacki</small></div>
         <span class="rec-line__val"><em>407</em> km/h</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2010</span>
-        <div class="rec-line__name">Veyron 16.4 Super Sport<small>Raphanel · Ehra-Lessien</small></div>
+        <div class="rec-line__name">Veyron 16.4 Super Sport<small>30 units · Raphanel</small></div>
         <span class="rec-line__val"><em>431.072</em> km/h</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2013</span>
-        <div class="rec-line__name">Grand Sport Vitesse<small>Anthony Liu · open-top record</small></div>
+        <div class="rec-line__name">Grand Sport Vitesse<small>Open-top car · Anthony Liu</small></div>
         <span class="rec-line__val"><em>408.84</em> km/h</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2015</span>
-        <div class="rec-line__name">The 450th<small>The last Veyron is sold</small></div>
+        <div class="rec-line__name">The 450th Veyron<small>2005–2015 · Finale</small></div>
         <span class="rec-line__val"><em>450</em> Units</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2019</span>
-        <div class="rec-line__name">Chiron Super Sport 300+<small>Wallace · first 300 mph</small></div>
+        <div class="rec-line__name">Chiron Super Sport 300+<small>Legacy · Wallace · 300 mph</small></div>
         <span class="rec-line__val"><em>490.484</em> km/h</span>
       </div>
     </div>
@@ -587,9 +614,9 @@
 
 <!-- ============ 04 Bespoke ============ -->
 <div class="chapter-break chapter-break--dark" id="bespoke" data-chapter>
-  <span class="chapter-break__wm" aria-hidden="true">04</span>
+  <span class="chapter-break__wm" aria-hidden="true">05</span>
   <div class="chapter-break__inner">
-    <span class="chapter-break__no">04</span>
+    <span class="chapter-break__no">05</span>
     <div>
       <h2>Bespoke<span class="latin">Special Editions</span></h2>
       <p class="chapter-break__sub">From the bare carbon of the Pur Sang to the porcelain of the L'Or Blanc — with the Veyron, bespoke is the norm: 450 cars, no two alike.</p>
@@ -682,9 +709,9 @@
 
 <!-- ============ 05 Les Légendes de Bugatti ============ -->
 <div class="chapter-break" id="legends" data-chapter>
-  <span class="chapter-break__wm" aria-hidden="true">05</span>
+  <span class="chapter-break__wm" aria-hidden="true">06</span>
   <div class="chapter-break__inner">
-    <span class="chapter-break__no">05</span>
+    <span class="chapter-break__no">06</span>
     <div>
       <h2>Les Légendes de Bugatti<span class="latin">The Legends</span></h2>
       <p class="chapter-break__sub">Six legends, 18 cars, all based on the Grand Sport Vitesse — each one a modern translation of a chapter of Bugatti history.</p>
@@ -705,7 +732,7 @@
       </div>
     </div>
 
-    <div class="hcards reveal">
+    <div class="hcards hcards--3 reveal">
       <article class="hcard">
         <span class="hcard__year">2013 · 08</span>
         <h3>Jean-Pierre Wimille</h3>
@@ -772,9 +799,9 @@
 
 <!-- ============ 06 Legacy · F.K.P. Hommage ============ -->
 <div class="chapter-break chapter-break--dark" id="legacy" data-chapter>
-  <span class="chapter-break__wm" aria-hidden="true">06</span>
+  <span class="chapter-break__wm" aria-hidden="true">07</span>
   <div class="chapter-break__inner">
-    <span class="chapter-break__no">06</span>
+    <span class="chapter-break__no">07</span>
     <div>
       <h2>Legacy<span class="latin">Legacy · F.K.P. Hommage</span></h2>
       <p class="chapter-break__sub">In 2026, twenty years of the Veyron — a new one-of-one honours its creator, Ferdinand K. Piëch.</p>
@@ -836,9 +863,9 @@
 
 <!-- ============ 07 Specifications ============ -->
 <div class="chapter-break" id="specs" data-chapter>
-  <span class="chapter-break__wm" aria-hidden="true">07</span>
+  <span class="chapter-break__wm" aria-hidden="true">08</span>
   <div class="chapter-break__inner">
-    <span class="chapter-break__no">07</span>
+    <span class="chapter-break__no">08</span>
     <div>
       <h2>Specifications<span class="latin">Specifications</span></h2>
       <p class="chapter-break__sub">W16 · 8.0 litres · four turbochargers · all-wheel drive. Data from official Bugatti press releases and the 2005 technical specification.</p>

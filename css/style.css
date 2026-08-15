@@ -1666,3 +1666,6 @@ button { font-family: inherit; cursor: pointer; }
    ============================================================ */
 .hero__wordmark { filter: none; height: auto; }
 .figrow--4 { grid-template-columns: repeat(2, 1fr); }
+/* 传奇版六卡 3×2 整齐排列 */
+.hcards--3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 860px) { .hcards--3 { grid-template-columns: 1fr; } }

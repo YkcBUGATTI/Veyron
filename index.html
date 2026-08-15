@@ -36,11 +36,12 @@
     <a href="#intro"><span class="idx">序</span>360° 环绕</a>
     <a href="#origins"><span class="idx">01</span>起源</a>
     <a href="#power"><span class="idx">02</span>千匹之心</a>
-    <a href="#records"><span class="idx">03</span>速度纪录</a>
-    <a href="#bespoke"><span class="idx">04</span>特别版</a>
-    <a href="#legends"><span class="idx">05</span>传奇版</a>
-    <a href="#legacy"><span class="idx">06</span>传承 · F.K.P.</a>
-    <a href="#specs"><span class="idx">07</span>技术规格</a>
+    <a href="#testing"><span class="idx">03</span>研发测试</a>
+    <a href="#records"><span class="idx">04</span>速度纪录</a>
+    <a href="#bespoke"><span class="idx">05</span>特别版</a>
+    <a href="#legends"><span class="idx">06</span>传奇版</a>
+    <a href="#legacy"><span class="idx">07</span>传承 · F.K.P.</a>
+    <a href="#specs"><span class="idx">08</span>技术规格</a>
   </nav>
   <p class="menu-overlay__sub">BUGATTI — VEYRON · MOLSHEIM</p>
 </div>
@@ -57,7 +58,9 @@
 <section class="hero" id="hero">
   <div class="hero__media">
     <div class="hero__parallax">
-      <img src="img/hero-front.jpg" alt="Bugatti Veyron 16.4">
+      <video autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.jpg">
+        <source src="video/hero-main.mp4" type="video/mp4">
+      </video>
     </div>
     <div class="hero__veil"></div>
   </div>
@@ -74,33 +77,33 @@
 <!-- ============ 序 · 360° 环绕 + 诞生(无章节标题) ============ -->
 <section class="chapter chapter--dark" id="intro" style="padding-top:0;">
   <div class="scrub">
-    <div class="scrub__track" data-dur="15">
+    <div class="scrub__track" data-dur="20">
       <div class="scrub__sticky">
         <video class="scrub__video" src="video/veyron-360.mp4" muted playsinline preload="none" poster="img/scrub-poster.jpg"></video>
         <img class="scrub__poster" src="img/scrub-poster.jpg" alt="Veyron 家族 360°">
         <div class="scrub__veil"></div>
         <div class="scrub__ui">
-          <span class="scrub__label">360° · 滚动驱动</span>
+          <span class="scrub__label">SUPER SPORT · 滚动驱动</span>
           <span class="scrub__prog mono">TIME <b>00:00</b></span>
         </div>
         <div class="scrub__texts">
           <div class="scrub__text is-on">
-            <h3>2008 · 敞篷的诞生<br><em>GRAND SPORT</em></h3>
-            <p>Veyron 家族第一款敞篷:1,001 PS 与可拆卸硬顶,闭顶极速 407 km/h。</p>
+            <h3>1,200 PS<br><em>W16 · 极致进化</em></h3>
+            <p>2010 年:更大涡轮、新中冷与车顶 NACA 进气——Super Sport,性能之巅。</p>
           </div>
           <div class="scrub__text">
-            <h3>2010 · 431.072 KM/H<br><em>SUPER SPORT</em></h3>
-            <p>1,200 PS、NACA 车顶进气,2010 年 7 月刷新量产车世界纪录。</p>
+            <h3>431.072 KM/H<br><em>世界纪录</em></h3>
+            <p>2010 年 7 月 4 日,Pierre-Henri Raphanel 在 Ehra-Lessien 刷新量产车世界纪录。</p>
           </div>
           <div class="scrub__text">
-            <h3>2012 · 敞篷极速纪录<br><em>GRAND SPORT VITESSE</em></h3>
-            <p>1,200 PS 的敞篷之王,2013 年以 408.84 km/h 创下敞篷量产车纪录。</p>
+            <h3>30 台<br><em>限量传奇</em></h3>
+            <p>以纪录之车为蓝本——Veyron 家族的性能顶点,限量 30 台。</p>
           </div>
         </div>
         <div class="scrub__meter" aria-hidden="true">
           <span class="scrub__deg"><b>0</b>°</span>
           <i></i>
-          <span>旋转角度</span>
+          <span>滚动进度</span>
         </div>
       </div>
     </div>
@@ -218,16 +221,6 @@
       </div>
     </div>
 
-    <div class="figrow figrow--2 reveal">
-      <figure class="figure">
-        <div class="figure__media"><img src="img/hist-lemans-1939.jpg" alt="1939 年勒芒" loading="lazy"></div>
-        <figcaption class="figure__cap"><span class="no">04</span><span class="zh">1939 勒芒——Pierre Veyron 与 57G Tank 的冠军时刻。</span></figcaption>
-      </figure>
-      <figure class="figure">
-        <div class="figure__media"><img src="img/hist-57g-tank.jpg" alt="Type 57G Tank" loading="lazy"></div>
-        <figcaption class="figure__cap"><span class="no">05</span><span class="zh">Type 57G Tank——1937 与 1939 两度勒芒夺冠。</span></figcaption>
-      </figure>
-    </div>
   </div>
 </section>
 
@@ -246,9 +239,7 @@
 <section class="chapter chapter--dark">
   <div class="wrap" style="margin-top:clamp(3rem,7vh,5rem);">
     <div class="chapter-video reveal">
-      <video autoplay muted loop playsinline preload="metadata" poster="video/w16-poster.jpg" data-autoview>
-        <source src="video/w16-engine.mp4" type="video/mp4">
-      </video>
+      <img src="img/w16-atelier.jpg" alt="灯道中的 Veyron 裸车身" loading="lazy">
       <div class="chapter-video__veil"></div>
       <div class="chapter-video__inner">
         <span class="chapter-video__no">W16 · THE 1,001 PS HEART</span>
@@ -389,6 +380,10 @@
       </div>
     </div>
 
+    <div class="prose prose--center reveal" style="margin-top:clamp(3.2rem,8vh,5.5rem);">
+      <p class="lead">数字,讲述这台发动机。</p>
+    </div>
+
     <div class="hcards reveal">
       <article class="hcard">
         <span class="hcard__year">W16 · 01</span>
@@ -416,10 +411,32 @@
       </article>
     </div>
 
-    <!-- 全球测试:从 Ladoux 到 Ehra-Lessien -->
-    <div class="prose prose--center reveal" style="margin-top:clamp(3rem,7vh,5rem);">
-      <p class="lead">2001 年,Loris Bicocchi 在 Michelin 的 Ladoux 试车场完成首驾——<br>当时 Veyron 的输出,是任何其他量产车的两倍。</p>
-      <p>没有参考系,一切都要重新建立:超过 400 km/h 时,空气动力学、稳定性与制动的规则彻底改变。<br>热区、冰面、高速环道——Veyron 在全球极端条件下被反复验证,直到它足以交给普通驾驶者。</p>
+  </div>
+</section>
+
+<!-- ============ 03 研发测试 ============ -->
+<div class="chapter-break" id="testing" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">03</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">03</span>
+    <div>
+      <h2>研发测试<span class="latin">Development &amp; Testing</span></h2>
+      <p class="chapter-break__sub">从 Michelin 的 Ladoux 到 Ehra-Lessien——在热区、冰面与高速环道上,Veyron 被验证到足以交给任何驾驶者。</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="wrap">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/test-bicocchi.jpg" alt="Loris Bicocchi 的头盔" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">The First Drive · 2001</span>
+        <h3>Loris Bicocchi 与首驾</h3>
+        <p>2001 年,一个电话改变了 Loris Bicocchi 的职业生涯——首驾在 Michelin 的 Ladoux 试车场,一辆红黑原型车。当时 Veyron 的输出是任何其他量产车的两倍;没有参考系,一切都要重新建立。</p>
+      </div>
     </div>
 
     <div class="quote reveal">
@@ -444,11 +461,11 @@
   </div>
 </section>
 
-<!-- ============ 03 速度纪录 ============ -->
+<!-- ============ 04 速度纪录 ============ -->
 <div class="chapter-break" id="records" data-chapter>
-  <span class="chapter-break__wm" aria-hidden="true">03</span>
+  <span class="chapter-break__wm" aria-hidden="true">04</span>
   <div class="chapter-break__inner">
-    <span class="chapter-break__no">03</span>
+    <span class="chapter-break__no">04</span>
     <div>
       <h2>速度纪录<span class="latin">The Records</span></h2>
       <p class="chapter-break__sub">2005 年 4 月 19 日,量产车首破 400 km/h;此后十年,纪录一次次被 Veyron 自己改写。</p>
@@ -459,8 +476,8 @@
 <section class="chapter">
   <div class="wrap">
     <div class="chapter-video reveal" style="margin-top:clamp(2rem,5vh,3.5rem);">
-      <video autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.jpg" data-autoview>
-        <source src="video/hero-main.mp4" type="video/mp4">
+      <video autoplay muted loop playsinline preload="metadata" poster="video/record-407-poster.jpg" data-autoview>
+        <source src="video/record-407.mp4" type="video/mp4">
       </video>
       <div class="chapter-video__veil"></div>
       <div class="chapter-video__inner">
@@ -538,37 +555,37 @@
     <div class="rec-line reveal">
       <div class="rec-line__item">
         <span class="rec-line__year">1998</span>
-        <div class="rec-line__name">EB 118<small>概念车序章 · W18</small></div>
+        <div class="rec-line__name">EB 118<small>概念车 · W18 6.3L · 1998</small></div>
         <span class="rec-line__val"><em>555</em> PS</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2001</span>
-        <div class="rec-line__name">W16 首次点火<small>Molsheim · 千匹达成</small></div>
+        <div class="rec-line__name">W16 原型机<small>Molsheim · 首次点火</small></div>
         <span class="rec-line__val"><em>1,000+1</em> PS</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2005</span>
-        <div class="rec-line__name">Veyron 16.4<small>Novacki · 量产车首破 400</small></div>
+        <div class="rec-line__name">Veyron 16.4 硬顶<small>量产车 · Novacki</small></div>
         <span class="rec-line__val"><em>407</em> km/h</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2010</span>
-        <div class="rec-line__name">Veyron 16.4 Super Sport<small>Raphanel · Ehra-Lessien</small></div>
+        <div class="rec-line__name">Veyron 16.4 Super Sport<small>限量 30 台 · Raphanel</small></div>
         <span class="rec-line__val"><em>431.072</em> km/h</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2013</span>
-        <div class="rec-line__name">Grand Sport Vitesse<small>Anthony Liu · 敞篷纪录</small></div>
+        <div class="rec-line__name">Grand Sport Vitesse<small>敞篷量产车 · Anthony Liu</small></div>
         <span class="rec-line__val"><em>408.84</em> km/h</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2015</span>
-        <div class="rec-line__name">第 450 台<small>最后一台 Veyron 售出</small></div>
+        <div class="rec-line__name">第 450 台 Veyron<small>2005–2015 · 终章</small></div>
         <span class="rec-line__val"><em>450</em> 台</span>
       </div>
       <div class="rec-line__item">
         <span class="rec-line__year">2019</span>
-        <div class="rec-line__name">Chiron Super Sport 300+<small>Wallace · 首个 300 mph</small></div>
+        <div class="rec-line__name">Chiron Super Sport 300+<small>传承 · Wallace · 300 mph</small></div>
         <span class="rec-line__val"><em>490.484</em> km/h</span>
       </div>
     </div>
@@ -587,9 +604,9 @@
 
 <!-- ============ 04 特别版 ============ -->
 <div class="chapter-break chapter-break--dark" id="bespoke" data-chapter>
-  <span class="chapter-break__wm" aria-hidden="true">04</span>
+  <span class="chapter-break__wm" aria-hidden="true">05</span>
   <div class="chapter-break__inner">
-    <span class="chapter-break__no">04</span>
+    <span class="chapter-break__no">05</span>
     <div>
       <h2>特别版<span class="latin">Bespoke</span></h2>
       <p class="chapter-break__sub">从裸碳的 Pur Sang,到瓷器的 L'Or Blanc——在 Veyron 身上,定制是一种常态:450 台,没有两台完全相同。</p>
@@ -682,9 +699,9 @@
 
 <!-- ============ 05 传奇版 ============ -->
 <div class="chapter-break" id="legends" data-chapter>
-  <span class="chapter-break__wm" aria-hidden="true">05</span>
+  <span class="chapter-break__wm" aria-hidden="true">06</span>
   <div class="chapter-break__inner">
-    <span class="chapter-break__no">05</span>
+    <span class="chapter-break__no">06</span>
     <div>
       <h2>传奇版<span class="latin">Les Légendes de Bugatti</span></h2>
       <p class="chapter-break__sub">六款传奇、18 台,全部基于 Grand Sport Vitesse——每一台,都是一段布加迪历史的现代转译。</p>
@@ -705,7 +722,7 @@
       </div>
     </div>
 
-    <div class="hcards reveal">
+    <div class="hcards hcards--3 reveal">
       <article class="hcard">
         <span class="hcard__year">2013 · 08</span>
         <h3>Jean-Pierre Wimille</h3>
@@ -772,9 +789,9 @@
 
 <!-- ============ 06 传承 · F.K.P. Hommage ============ -->
 <div class="chapter-break chapter-break--dark" id="legacy" data-chapter>
-  <span class="chapter-break__wm" aria-hidden="true">06</span>
+  <span class="chapter-break__wm" aria-hidden="true">07</span>
   <div class="chapter-break__inner">
-    <span class="chapter-break__no">06</span>
+    <span class="chapter-break__no">07</span>
     <div>
       <h2>传承<span class="latin">Legacy · F.K.P. Hommage</span></h2>
       <p class="chapter-break__sub">2026 年,Veyron 二十周年——一台新的 1-of-1,向它的缔造者 Ferdinand K. Piëch 致敬。</p>
@@ -836,9 +853,9 @@
 
 <!-- ============ 07 技术规格 ============ -->
 <div class="chapter-break" id="specs" data-chapter>
-  <span class="chapter-break__wm" aria-hidden="true">07</span>
+  <span class="chapter-break__wm" aria-hidden="true">08</span>
   <div class="chapter-break__inner">
-    <span class="chapter-break__no">07</span>
+    <span class="chapter-break__no">08</span>
     <div>
       <h2>技术规格<span class="latin">Specifications</span></h2>
       <p class="chapter-break__sub">W16 · 8.0 升 · 四涡轮 · 全时四驱。数据来自布加迪官方新闻稿与 2005 年技术规格。</p>
