@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUGATTI VEYRON — Bugatti Veyron</title>
+<meta name="description" content="The Bugatti Veyron: a 1,001 PS W16, 407 km/h top speed, the first production car to break the 400 km/h barrier. From a 1997 sketch on an envelope to the 431.072 km/h world record — the complete story.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="BUGATTI VEYRON — Bugatti Veyron">
+<meta property="og:description" content="1,001 PS · 407 km/h · First to break 400">
+<meta property="og:image" content="img/hero-front.jpg">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230b0b0d'/%3E%3Ctext x='50' y='70' font-size='56' text-anchor='middle' fill='%23f4f2ee' font-family='serif'%3EV%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<!-- ============ Top bar (hidden on hero, appears on scroll) ============ -->
+<header class="nav is-hero" id="nav">
+  <div class="nav__inner">
+    <span class="nav__now mono" id="navNow">00 · Intro</span>
+    <a class="nav__brand" href="#hero">
+      <svg viewBox="0 0 2468.89 566.93" width="86" height="20" fill="currentColor" aria-label="BUGATTI"><path d="M272.56 273.34c28.81-26.48 45.95-63.86 45.95-107.47 0-89.56-65.41-154.97-155.75-154.97H0v545.13h174.44c92.67 0 160.42-66.97 160.42-159.64 0-52.18-23.36-95.79-62.3-123.04ZM87.22 95.01h72.42c42.83 0 71.65 28.81 71.65 70.87s-28.81 70.87-71.65 70.87H87.22V95.01Zm84.1 376.91h-84.1V320.84h84.1c45.17 0 76.32 30.37 76.32 75.54s-31.15 75.54-76.32 75.54ZM648.69 406.51c0 44.39-31.93 76.32-76.32 76.32s-76.32-31.93-76.32-76.32V10.9h-87.22v389.38c0 96.56 68.53 166.65 163.54 166.65s163.54-70.09 163.54-166.65V10.9h-87.22v395.61ZM993.03 0c-95.01 0-163.54 70.09-163.54 166.65v233.62c0 96.56 68.53 166.65 163.54 166.65s163.54-70.09 163.54-166.65V241.41H993.03v84.11h76.32v80.99c0 44.39-31.93 76.32-76.32 76.32s-76.32-31.93-76.32-76.32V160.42c0-44.39 31.93-76.32 76.32-76.32s76.32 31.93 76.32 76.32v14.02h87.22v-7.79C1156.57 70.09 1088.04 0 993.03 0ZM1344.1 10.9l-125.38 545.12h86.44L1330.08 447h147.96l24.92 109.02h86.44L1464.03 10.9H1344.1Zm5.45 351.99 54.51-239.08 54.51 239.08h-109.02ZM1604.2 95.01h119.93l.78 461.02h85.66l.78-461.02h119.92V10.9H1604.2v84.11zM1976.59 95.01h119.93l.78 461.02h85.66l.78-461.02h119.92V10.9h-327.07v84.11zM2381.67 10.9h87.22v545.12h-87.22z"></path></svg>
+      <span class="nav__brand-sub">VEYRON 16.4</span>
+    </a>
+    <span class="nav__lang">
+      <a class="lang-btn mono" href="index.html">中文</a>
+      <button class="nav__menu-btn mono" id="menuBtn" aria-label="Chapter menu" aria-expanded="false"><span class="nav__menu-icon"><i></i><i></i><i></i></span></button>
+    </span>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><i id="navBar"></i></div>
+</header>
+
+<!-- Chapter menu overlay -->
+<div class="menu-overlay" id="menuOverlay">
+  <nav class="menu-overlay__nav" aria-label="Chapter menu">
+    <a href="#intro"><span class="idx">I</span>360° Orbit</a>
+    <a href="#origins"><span class="idx">01</span>The Origins</a>
+    <a href="#power"><span class="idx">02</span>The 1,001 PS W16</a>
+    <a href="#records"><span class="idx">03</span>The Records</a>
+    <a href="#bespoke"><span class="idx">04</span>Bespoke</a>
+    <a href="#legends"><span class="idx">05</span>Les Légendes</a>
+    <a href="#legacy"><span class="idx">06</span>Legacy · F.K.P.</a>
+    <a href="#specs"><span class="idx">07</span>Specifications</a>
+  </nav>
+  <p class="menu-overlay__sub">BUGATTI — VEYRON · MOLSHEIM</p>
+</div>
+
+<!-- Scroll progress gauge -->
+<div class="scroll-gauge" id="scrollGauge" aria-hidden="true">
+  <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="19"/><circle class="sg__bar" cx="22" cy="22" r="19"/></svg>
+  <span class="sg__num mono">00</span>
+</div>
+
+<main>
+
+<!-- ============ HERO (studio shot + centred wordmark) ============ -->
+<section class="hero" id="hero">
+  <div class="hero__media">
+    <div class="hero__parallax">
+      <img src="img/hero-front.jpg" alt="Bugatti Veyron 16.4">
+    </div>
+    <div class="hero__veil"></div>
+  </div>
+  <div class="hero__content">
+    <svg class="hero__wordmark" viewBox="0 0 900 320" width="540" height="192" role="img" aria-label="Veyron">
+      <text x="450" y="180" text-anchor="middle" font-family="'BUGATTI Display','Noto Serif SC','Songti SC',serif" font-size="172" fill="#f2f2f5">Veyron</text>
+      <text x="450" y="252" text-anchor="middle" font-family="'BUGATTI Mono',Consolas,monospace" font-size="30" letter-spacing="14" fill="#a9a9b3">16.4 · 1,001 PS · 407 KM/H</text>
+    </svg>
+    <p class="hero__mini">THE FIRST TO BREAK 400 KM/H</p>
+  </div>
+  <a class="hero__scroll" href="#intro" aria-label="Scroll down">SCROLL</a>
+</section>
+
+<!-- ============ Prologue · 360° Orbit + Birth (no chapter title) ============ -->
+<section class="chapter chapter--dark" id="intro" style="padding-top:0;">
+  <div class="scrub">
+    <div class="scrub__track" data-dur="15">
+      <div class="scrub__sticky">
+        <video class="scrub__video" src="video/veyron-360.mp4" muted playsinline preload="none" poster="img/scrub-poster.jpg"></video>
+        <img class="scrub__poster" src="img/scrub-poster.jpg" alt="Veyron family 360°">
+        <div class="scrub__veil"></div>
+        <div class="scrub__ui">
+          <span class="scrub__label">360° · Scroll-driven</span>
+          <span class="scrub__prog mono">TIME <b>00:00</b></span>
+        </div>
+        <div class="scrub__texts">
+          <div class="scrub__text is-on">
+            <h3>2008 · The Roadster Is Born<br><em>GRAND SPORT</em></h3>
+            <p>The Veyron family's first convertible: 1,001 PS with a removable roof — 407 km/h when closed.</p>
+          </div>
+          <div class="scrub__text">
+            <h3>2010 · 431.072 KM/H<br><em>SUPER SPORT</em></h3>
+            <p>1,200 PS and NACA roof intakes — the production-car world record, set in July 2010.</p>
+          </div>
+          <div class="scrub__text">
+            <h3>2012 · ROOF-DOWN RECORD<br><em>GRAND SPORT VITESSE</em></h3>
+            <p>The 1,200 PS roadster king — 408.84 km/h in 2013, the open-top production record.</p>
+          </div>
+        </div>
+        <div class="scrub__meter" aria-hidden="true">
+          <span class="scrub__deg"><b>0</b>°</span>
+          <i></i>
+          <span>Rotation</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Birth: the meaning of the Veyron (no chapter title) -->
+  <div class="wrap" style="padding-top:clamp(3.5rem,8vh,6rem);">
+    <div class="prose prose--center reveal">
+      <p class="lead">The Veyron is the first hyper sports car of modern times —<br>in 2005, it wrote a new page in production-car history with 1,001 PS and 407 km/h.</p>
+      <p>From a sketch on an envelope in 1997, to the first firing of the W16 at 1,000+1 PS in 2001,<br>to series delivery in 2005 — 450 cars, eight years, and the meaning of "possible" redefined.</p>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/hist-concepts-2000.jpg" alt="Veyron concept car on a salt flat" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">1997 → 2005 · From Sketch to Series</span>
+        <h3>An Idea on an Envelope</h3>
+        <p>In 1997, Ferdinand K. Piëch sketched an 18-cylinder engine on a train between Tokyo and Nagoya; in 1998, Volkswagen acquired the Bugatti brand. Four concept cars and countless engineering limits later — in 2005, the idea became reality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 01 The Origins ============ -->
+<div class="chapter-break" id="origins" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">01</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">01</span>
+    <div>
+      <h2>The Origins<span class="latin">Origins</span></h2>
+      <p class="chapter-break__sub">From a sketch of an engine, to four concept cars, to the first firing of 1,000+1 PS in 2001 — the Veyron's path began with a refusal to accept the impossible.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="wrap">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/hist-piech.jpg" alt="Piëch's engine sketch" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">The Vision</span>
+        <h3>1997: An 18-Cylinder on an Envelope</h3>
+        <p>Ferdinand K. Piëch, then Chairman of Volkswagen AG, set the goal: an output beyond anything in existence. The discussion ran from V6 and V8 to V12 and on to 18 cylinders — a few months later, Volkswagen acquired the Bugatti brand, and the engine found its home.</p>
+      </div>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>Back then, there was no literature or empirical data for production engines with more than twelve cylinders — or for production vehicles that could go faster than 350 km/h.</blockquote>
+      <figcaption><b>Karl-Heinz Neumann</b> — Head of Engine Development, Volkswagen</figcaption>
+    </div>
+
+    <div class="dcards dcards--edge reveal">
+      <div class="dcard">
+        <img src="img/hist-eb118.jpg" alt="EB 118 concept" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Concept · 01</span>
+          <h3>EB 118</h3>
+          <p>Paris Motor Show 1998 · by Giugiaro. A grand tourer with a <b>6.3-litre W18 and 555 PS</b>, Art Deco cabin.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/hist-eb218.jpg" alt="EB 218 concept" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Concept · 02</span>
+          <h3>EB 218</h3>
+          <p>Geneva 1999 · a four-door saloon with the <b>same W18 heart</b> — another facet of Bugatti.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/hist-eb18-3.jpg" alt="EB 18/3 Chiron concept" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Concept · 03</span>
+          <h3>EB 18/3 Chiron</h3>
+          <p>IAA Frankfurt 1999 · the first step <b>towards a super sports car</b> — the name Chiron was born here.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/hist-eb18-4.jpg" alt="EB 18/4 Veyron concept" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Concept · 04</span>
+          <h3>EB 18/4 Veyron</h3>
+          <p>Tokyo 1999 · under Jozef Kabaň, the <b>Veyron name and production direction</b> were set.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/hist-four-concepts.jpg" alt="The four concept cars together" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">01</span><span class="zh">Four concepts — from the EB 118 to the EB 18/4 Veyron.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/hist-2005-unveil.jpg" alt="The 2005 Veyron unveiling" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">02</span><span class="zh">2005 — series launch, the idea becomes reality.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/hist-chassis5.jpg" alt="Pre-series Chassis 5.0 testing" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">03</span><span class="zh">Pre-series Chassis 5.0 — forged in relentless testing and homologation.</span></figcaption>
+      </figure>
+    </div>
+
+    <!-- The name -->
+    <div class="media-row media-row--flip reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <div class="media-row__media">
+        <img src="img/hist-pierre-veyron.jpg" alt="Historic photo of Pierre Veyron" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">The Name</span>
+        <h3>Pierre Veyron: 1939 Le Mans Winner</h3>
+        <p>Pierre Veyron (1903–1970) was a Bugatti factory driver — in 1939, he and Jean-Pierre Wimille won the Le Mans 24 Hours in the Type 57G Tank. Naming this car after him is Bugatti's most solemn tribute to its heritage of speed.</p>
+      </div>
+    </div>
+
+    <div class="figrow figrow--2 reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/hist-lemans-1939.jpg" alt="Le Mans 1939" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">04</span><span class="zh">Le Mans 1939 — Pierre Veyron's winning drive in the 57G Tank.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/hist-57g-tank.jpg" alt="Type 57G Tank" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">05</span><span class="zh">Type 57G Tank — Le Mans winner in both 1937 and 1939.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 02 The 1,001 PS W16 ============ -->
+<div class="chapter-break chapter-break--dark" id="power" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">02</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">02</span>
+    <div>
+      <h2>The 1,001 PS W16<span class="latin">The Heart</span></h2>
+      <p class="chapter-break__sub">8.0 litres, 16 cylinders, four turbochargers — more than 3,500 parts, all assembled by hand. At its first firing in 2001, it delivered 1,000+1 PS.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark">
+  <div class="wrap" style="margin-top:clamp(3rem,7vh,5rem);">
+    <div class="chapter-video reveal">
+      <video autoplay muted loop playsinline preload="metadata" poster="video/w16-poster.jpg" data-autoview>
+        <source src="video/w16-engine.mp4" type="video/mp4">
+      </video>
+      <div class="chapter-video__veil"></div>
+      <div class="chapter-video__inner">
+        <span class="chapter-video__no">W16 · THE 1,001 PS HEART</span>
+        <h3>Birth of the 1,001 PS Heart</h3>
+        <p>At its first firing in 2001 it delivered 1,000+1 PS; an asymmetric firing order with 45-degree gaps gives it a sound like no other; Ion Current Sensing monitors each cylinder — every detail is designed for reliability and extremes.</p>
+      </div>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/hero-rear.jpg" alt="Grand Sport rear with the W16 exposed" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">The Brief · Four Goals</span>
+        <h3>From Monocoque to W16</h3>
+        <p>The specification gave the developers just four goals: transfer more than <b>1,000 PS</b> to the road, drive faster than <b>400 km/h</b>, accelerate from 0–100 km/h in <b>under 3 seconds</b> — and, the biggest challenge, in this configuration still be suitable for driving <b>"to the opera"</b> in comfort and style. A carbon-fibre monocoque of about 110 kg, a front structure of only 34 kg — eight years to turn four goals into one car.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Covered scroll gallery: the art of engineering -->
+  <div class="gallery" style="margin-top:clamp(3rem,7vh,5rem);">
+    <div class="gallery__texts">
+      <div class="g-text g-text--right">
+        <div class="g-text__card">
+          <span class="g-text__no">W16 · 01</span>
+          <h3>16 Cylinders in a W</h3>
+          <p>Two eight-cylinder banks in a W arrangement — compact enough to be no bigger than a V12. 8.0 litres, four turbochargers.</p>
+        </div>
+      </div>
+      <div class="g-text g-text--left">
+        <div class="g-text__card">
+          <span class="g-text__no">W16 · 02</span>
+          <h3>Forged Conrods and Pistons</h3>
+          <p>Every connecting rod and piston is forged and weighed — the hand assembly of 3,500+ parts begins with them.</p>
+        </div>
+      </div>
+      <div class="g-text g-text--right">
+        <div class="g-text__card">
+          <span class="g-text__no">W16 · 03</span>
+          <h3>Valves and Springs</h3>
+          <p>Intake valves, exhaust valves and springs are matched and fitted by hand — precision is the price of reliability.</p>
+        </div>
+      </div>
+      <div class="g-text g-text--left">
+        <div class="g-text__card">
+          <span class="g-text__no">W16 · 04</span>
+          <h3>Engine Meets Gearbox</h3>
+          <p>The 8.0-litre W16 and the 7-speed DSG are married at the Atelier in Molsheim — a dry-sump design keeps the centre of gravity low.</p>
+        </div>
+      </div>
+      <div class="g-text g-text--right">
+        <div class="g-text__card">
+          <span class="g-text__no">W16 · 05</span>
+          <h3>7-Speed DSG</h3>
+          <p>Gear changes without interrupting power — 1,250 Nm is carried smoothly, all-wheel drive sending it to all four wheels.</p>
+        </div>
+      </div>
+      <div class="g-text g-text--left">
+        <div class="g-text__card">
+          <span class="g-text__no">W16 · 06</span>
+          <h3>Carbon-Fibre Monocoque</h3>
+          <p>The first full carbon-fibre monocoque in a production car — about 110 kg, torsional rigidity of 60,000 Nm per degree. The passenger cell is a survival cell.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery__media">
+      <div class="g-sticky">
+        <span class="g-count mono"><b>01</b> / 06</span>
+        <div class="g-image">
+          <img src="img/w16-master-01.jpg" alt="W16 cylinder block">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/w16-master-02.jpg" alt="Forged conrods and pistons">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/w16-master-03.jpg" alt="Valve assembly">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/w16-atelier-engine.jpg" alt="Engine and gearbox marriage">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/eng-transmission.jpg" alt="7-speed DSG gearbox">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+        <div class="g-image">
+          <img src="img/w16-atelier.jpg" alt="Bare body in the light tunnel">
+          <div class="g-image__veil"></div>
+          <div class="g-image__veil2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="dcards dcards--edge reveal">
+      <div class="dcard">
+        <img src="img/eng-w16.jpg" alt="The W16 under test" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Power · 01</span>
+          <h3>The W16 Under Test</h3>
+          <p>Every engine is rigorously validated on the test bench — <b>16 cylinders, 1,000+ PS</b>.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/eng-track.jpg" alt="Track testing" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Power · 02</span>
+          <h3>Track Testing</h3>
+          <p>Engineers and drivers push <b>every component to its limit</b> on tracks and high-speed ovals.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/eng-brake.jpg" alt="Carbon-ceramic brakes" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Power · 03</span>
+          <h3>Carbon-Ceramic Brakes</h3>
+          <p>Carbon-ceramic discs and eight-piston calipers — <b>the power to stop from 407 km/h</b>.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/w16-teststand.jpg" alt="Dynamometer testing" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Power · 04</span>
+          <h3>Bench Validation</h3>
+          <p>A dynamometer that simulates 400+ km/h — <b>only the Veyron can push it to the limit</b>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hcards reveal">
+      <article class="hcard">
+        <span class="hcard__year">W16 · 01</span>
+        <h3>Hand Assembly</h3>
+        <p class="hcard__num">3,500+ PARTS</p>
+        <p>Every part is assembled by hand, monitored throughout by test computers — no shortcuts, only precision.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">W16 · 02</span>
+        <h3>A Compact Miracle</h3>
+        <p class="hcard__num">≈400 KG</p>
+        <p>No bigger than a V12, weighing about 400 kilograms — engineering that makes miracles compact.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">W16 · 03</span>
+        <h3>Asymmetric Firing</h3>
+        <p class="hcard__num">45° GAPS</p>
+        <p>A stand-alone asymmetric firing order gives the W16 a sound like no other engine on earth.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">W16 · 04</span>
+        <h3>Two-Circuit Cooling</h3>
+        <p class="hcard__num">40+ L</p>
+        <p>A two-circuit engine cooling system of more than 40 litres, with a separate circuit for the intercoolers — on a scale never seen in the industry.</p>
+      </article>
+    </div>
+
+    <!-- Global testing: from Ladoux to Ehra-Lessien -->
+    <div class="prose prose--center reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <p class="lead">In 2001, Loris Bicocchi took the first drive at Michelin's Ladoux test track —<br>at the time, the Veyron delivered twice the power of any other production car.</p>
+      <p>There was no reference point: beyond 400 km/h, the rules of aerodynamics, stability and braking changed entirely.<br>Hot zones, ice, high-speed ovals — the Veyron was validated in extreme conditions around the world, until it was ready for everyday drivers.</p>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>I was so excited that I couldn't even wait for the official tests on Monday morning — I went on Sunday.</blockquote>
+      <figcaption><b>Loris Bicocchi</b> — Veyron chief test driver · First drive 2001</figcaption>
+    </div>
+
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/test-ice.jpg" alt="Ice testing" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">01</span><span class="zh">Winter testing — the limits of all-wheel drive on ice.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/test-hot.jpg" alt="Hot-weather testing" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">02</span><span class="zh">Hot testing — South Africa's heat, the cooling system's trial.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/test-extreme.jpg" alt="Desert testing" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">03</span><span class="zh">Extreme conditions — a testing journey across the world.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 The Records ============ -->
+<div class="chapter-break" id="records" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">03</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">03</span>
+    <div>
+      <h2>The Records<span class="latin">Records</span></h2>
+      <p class="chapter-break__sub">On 19 April 2005, a production car broke the 400 km/h barrier for the first time; over the following decade, the record was rewritten again and again — by the Veyron itself.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="wrap">
+    <div class="chapter-video reveal" style="margin-top:clamp(2rem,5vh,3.5rem);">
+      <video autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.jpg" data-autoview>
+        <source src="video/hero-main.mp4" type="video/mp4">
+      </video>
+      <div class="chapter-video__veil"></div>
+      <div class="chapter-video__inner">
+        <span class="chapter-video__no">19.04.2005 · EHRA-LESSIEN · GERMANY</span>
+        <h3>407 KM/H: First to Break 400</h3>
+        <p>Test driver Uwe Novacki took the Veyron 16.4 down the high-speed straight at Ehra-Lessien and reached 407 km/h — the first time a production car had broken the 400 km/h barrier.</p>
+      </div>
+    </div>
+
+    <div class="bigstats reveal">
+      <div class="bigstats__item"><b><em>407</em> km/h</b><span>2005 · First past 400</span></div>
+      <div class="bigstats__item"><b><em>431.072</em> km/h</b><span>2010 · Guinness Record</span></div>
+      <div class="bigstats__item"><b><em>408.84</em> km/h</b><span>2013 · Open-Top Record</span></div>
+      <div class="bigstats__item"><b><em>450</em> Units</b><span>2005–2015 Total</span></div>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>We expected an average value of 425 km/h — but today the conditions were perfect and allowed even more.</blockquote>
+      <figcaption><b>Dr. Wolfgang Schreiber</b> — Chief Engineer, Bugatti · Record Day 2010</figcaption>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/ss-studio-01.jpg" alt="Veyron 16.4 Super Sport" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Veyron 16.4 Super Sport · 2010</span>
+        <h3>The Ultimate Evolution: 1,200 PS</h3>
+        <p>Larger turbochargers, new intercoolers, NACA roof intakes and a new fibre structure for the carbon monocoque — on 4 July 2010, Pierre-Henri Raphanel averaged 431.072 km/h at Ehra-Lessien: the Guinness-certified world record for a production car.</p>
+      </div>
+    </div>
+
+    <div class="media-row media-row--flip reveal">
+      <div class="media-row__media">
+        <img src="img/vitesse-01.jpg" alt="Grand Sport Vitesse by the sea" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Grand Sport Vitesse · 2012</span>
+        <h3>The Fastest Roadster</h3>
+        <p>1,200 PS and 1,500 Nm, a reinforced drivetrain and race-derived dampers; in April 2013, Anthony Liu drove the black-and-orange record car to 408.84 km/h — the world record for an open-top production car, unbeaten to this day.</p>
+      </div>
+    </div>
+
+    <div class="hcards reveal">
+      <article class="hcard">
+        <span class="hcard__year">The Driver · 01</span>
+        <h3>Uwe Novacki</h3>
+        <p class="hcard__num">407 KM/H · 2005</p>
+        <p>Volkswagen's chief driving safety instructor — the first man to take a production car past 400 km/h.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">The Driver · 02</span>
+        <h3>Pierre-Henri Raphanel</h3>
+        <p class="hcard__num">431.072 KM/H · 2010</p>
+        <p>Bugatti Pilote Officiel — set the production-car world record in the Super Sport.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">The Driver · 03</span>
+        <h3>Anthony Liu</h3>
+        <p class="hcard__num">408.84 KM/H · 2013</p>
+        <p>The 29-year-old Chinese entrepreneur and racing driver — set the open-top production record.</p>
+      </article>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__media">
+        <img src="img/ss-event-01.jpg" alt="Raphanel in the Super Sport cockpit" loading="lazy">
+      </div>
+      <figcaption class="figure__cap">
+        <span class="no">04</span>
+        <span class="zh">Record day — Pierre-Henri Raphanel in the Super Sport cockpit, waiting for the run to begin.</span>
+      </figcaption>
+    </figure>
+
+    <div class="rec-line reveal">
+      <div class="rec-line__item">
+        <span class="rec-line__year">1998</span>
+        <div class="rec-line__name">EB 118<small>Concept Prelude · W18</small></div>
+        <span class="rec-line__val"><em>555</em> PS</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2001</span>
+        <div class="rec-line__name">First Firing of the W16<small>Molsheim · 1,000 PS achieved</small></div>
+        <span class="rec-line__val"><em>1,000+1</em> PS</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2005</span>
+        <div class="rec-line__name">Veyron 16.4<small>Novacki · first past 400</small></div>
+        <span class="rec-line__val"><em>407</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2010</span>
+        <div class="rec-line__name">Veyron 16.4 Super Sport<small>Raphanel · Ehra-Lessien</small></div>
+        <span class="rec-line__val"><em>431.072</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2013</span>
+        <div class="rec-line__name">Grand Sport Vitesse<small>Anthony Liu · open-top record</small></div>
+        <span class="rec-line__val"><em>408.84</em> km/h</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2015</span>
+        <div class="rec-line__name">The 450th<small>The last Veyron is sold</small></div>
+        <span class="rec-line__val"><em>450</em> Units</span>
+      </div>
+      <div class="rec-line__item">
+        <span class="rec-line__year">2019</span>
+        <div class="rec-line__name">Chiron Super Sport 300+<small>Wallace · first 300 mph</small></div>
+        <span class="rec-line__val"><em>490.484</em> km/h</span>
+      </div>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__media">
+        <img src="img/rec407-03.jpg" alt="The Veyron on record day" loading="lazy">
+      </div>
+      <figcaption class="figure__cap">
+        <span class="no">03</span>
+        <span class="zh">Record day — the Veyron 16.4 on the straight at Ehra-Lessien.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 04 Bespoke ============ -->
+<div class="chapter-break chapter-break--dark" id="bespoke" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">04</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">04</span>
+    <div>
+      <h2>Bespoke<span class="latin">Special Editions</span></h2>
+      <p class="chapter-break__sub">From the bare carbon of the Pur Sang to the porcelain of the L'Or Blanc — with the Veyron, bespoke is the norm: 450 cars, no two alike.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark">
+  <div class="wrap">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/pursang-design.jpg" alt="Veyron 16.4 Pur Sang" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Pur Sang · 2007</span>
+        <h3>The Purity of Bare Carbon</h3>
+        <p>All paint removed, the weave of visible carbon fibre laid bare — five cars, the Veyron's answer to "material is design." Anscheidt: "Looking back on the Pur Sang is like remembering the birth of your first child."</p>
+      </div>
+    </div>
+
+    <div class="prose prose--center reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <p class="lead">The Sang Noir (2008) paid tribute to the Type 57S Atlantic in all-black with chrome details;<br>the Grand Sport Venet (2012), created with French artist Bernar Venet — art, on the road.</p>
+    </div>
+
+    <div class="media-row media-row--flip reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <div class="media-row__media">
+        <img src="img/lorblanc-top2.jpg" alt="Veyron Grand Sport L'Or Blanc" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">L'Or Blanc · 2011</span>
+        <h3>The World's First Porcelain Car</h3>
+        <p>Created with the Königliche Porzellan-Manufaktur (KPM) Berlin: the blue-and-white wave livery was taped out in Japanese tissue paper and hand-painted over three weeks; porcelain adorns the centre wheel badges, fuel and oil caps, the EB badge and the centre console — one of one.</p>
+      </div>
+    </div>
+
+    <div class="media-row reveal" style="margin-top:clamp(3rem,7vh,5rem);">
+      <div class="media-row__media">
+        <img src="img/sswrc-02.jpg" alt="Veyron Super Sport WRC" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Super Sport World Record Car · 2010</span>
+        <h3>The Record Car's Black-and-Orange Suit</h3>
+        <p>The livery of the 431.072 km/h record car: black visible carbon with Arancia orange. The WRC edition is limited to eight cars at €1.99 million — the record itself, as a collector's piece.</p>
+      </div>
+    </div>
+
+    <div class="dcards dcards--edge reveal">
+      <div class="dcard">
+        <img src="img/pursang-interior.jpg" alt="La Maison Pur Sang interior" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Bespoke · 01</span>
+          <h3>Pur Sang Interior</h3>
+          <p>The "La Maison Pur Sang" plaque — <b>the purity of materials</b>, inside and out.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/lorblanc-gas-cap.jpg" alt="L'Or Blanc porcelain fuel cap" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Bespoke · 02</span>
+          <h3>Porcelain Fuel Cap</h3>
+          <p>Porcelain echoing the wave livery — <b>250 years of KPM craft</b>, on the road.</p>
+        </div>
+      </div>
+      <div class="dcard">
+        <img src="img/sswrc-04.jpg" alt="EB wheel hub badge" loading="lazy">
+        <div class="dcard__body">
+          <span class="no">Bespoke · 03</span>
+          <h3>EB Wheel Badges</h3>
+          <p>Every badge is a declaration of identity — <b>EB, the Bugatti signature</b>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/lorblanc-interior.jpg" alt="L'Or Blanc porcelain interior" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">01</span><span class="zh">L'Or Blanc — porcelain inlays and white leather.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/sswrc-03.jpg" alt="Special edition cockpit" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">02</span><span class="zh">The cockpit — carbon and leather, bespoke everywhere.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/interior-generic.jpg" alt="Veyron driver's cabin" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">03</span><span class="zh">The cabin — the everyday of speed and luxury.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 Les Légendes de Bugatti ============ -->
+<div class="chapter-break" id="legends" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">05</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">05</span>
+    <div>
+      <h2>Les Légendes de Bugatti<span class="latin">The Legends</span></h2>
+      <p class="chapter-break__sub">Six legends, 18 cars, all based on the Grand Sport Vitesse — each one a modern translation of a chapter of Bugatti history.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="wrap">
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/leg-wimille-02.jpg" alt="Jean-Pierre Wimille Legend" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">2013–2014 · Six Legends, Three Cars Each</span>
+        <h3>Six Legends, 18 Cars</h3>
+        <p>Launched with "Jean-Pierre Wimille" at Pebble Beach in August 2013 and closed with "Ettore Bugatti" in August 2014 — all 18 cars were sold before the final model was revealed. All are based on the 1,200 PS W16 of the Grand Sport Vitesse.</p>
+      </div>
+    </div>
+
+    <div class="hcards reveal">
+      <article class="hcard">
+        <span class="hcard__year">2013 · 08</span>
+        <h3>Jean-Pierre Wimille</h3>
+        <p class="hcard__num">3 Cars</p>
+        <p>Homage to the 1937 Le Mans-winning 57G Tank: Bleu Wimille, the Le Mans circuit silhouette beneath the rear wing.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">2013 · 09</span>
+        <h3>Jean Bugatti</h3>
+        <p class="hcard__num">3 Cars</p>
+        <p>Homage to the 57SC Atlantic: jet-black carbon, the first platinum horseshoe grille.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">2013 · 11</span>
+        <h3>Meo Costantini</h3>
+        <p class="hcard__num">3 Cars</p>
+        <p>Homage to the Type 35 and the Targa Florio: light-blue carbon, the Targa circuit drawn beneath the wing.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">2014 · 03</span>
+        <h3>Rembrandt Bugatti</h3>
+        <p class="hcard__num">3 Cars</p>
+        <p>Homage to the sculptor Rembrandt: bronze-tinted carbon with Cognac leather.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">2014 · 04</span>
+        <h3>Black Bess</h3>
+        <p class="hcard__num">3 Cars</p>
+        <p>Homage to the Type 18 "Black Bess": all-black carbon with gold accents — a speed legend from 1913.</p>
+      </article>
+      <article class="hcard">
+        <span class="hcard__year">2014 · 08</span>
+        <h3>Ettore Bugatti</h3>
+        <p class="hcard__num">3 Cars</p>
+        <p>Homage to the Type 41 Royale: a black-and-white "Yin-Yang" split of polished aluminium and carbon.</p>
+      </article>
+    </div>
+
+    <div class="figrow figrow--4 reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/leg-wimille-01.jpg" alt="Wimille Legend with its history" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">01</span><span class="zh">The Wimille Legend — framed by the history of the 57G Tank.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/leg-costantini-01.jpg" alt="Meo Costantini Legend" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">02</span><span class="zh">The Costantini Legend — the head of the most successful racing era.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/leg-ettore-02.jpg" alt="Ettore Bugatti Legend on the move" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">03</span><span class="zh">The Ettore Legend — the Royale's "Yin-Yang" split.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/legends-door-sill.jpg" alt="Legends door sill plate" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">04</span><span class="zh">The door sill — "Les Légendes de Bugatti" and the founder's portrait.</span></figcaption>
+      </figure>
+    </div>
+
+    <div class="quote reveal">
+      <blockquote>We hope that one day, perhaps even at the Concours d'Elegance in Pebble Beach, the grandchildren of the current owners will sit inside the Ettore Bugatti Legend car and begin to reflect on the beauty of the materials, and the history they hold.</blockquote>
+      <figcaption><b>Achim Anscheidt</b> — Director of Design, Bugatti · 2004–2023</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 06 Legacy · F.K.P. Hommage ============ -->
+<div class="chapter-break chapter-break--dark" id="legacy" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">06</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">06</span>
+    <div>
+      <h2>Legacy<span class="latin">Legacy · F.K.P. Hommage</span></h2>
+      <p class="chapter-break__sub">In 2026, twenty years of the Veyron — a new one-of-one honours its creator, Ferdinand K. Piëch.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter chapter--dark">
+  <div class="wrap" style="margin-top:clamp(3rem,7vh,5rem);">
+    <div class="chapter-video reveal">
+      <video autoplay muted loop playsinline preload="metadata" poster="video/fkp-poster.jpg" data-autoview>
+        <source src="video/fkp-hommage.mp4" type="video/mp4">
+      </video>
+      <div class="chapter-video__veil"></div>
+      <div class="chapter-video__inner">
+        <span class="chapter-video__no">F.K.P. HOMMAGE · 2026 · RÉTROMOBILE PARIS</span>
+        <h3>An Homage to Piëch</h3>
+        <p>The second creation of Programme Solitaire: 1,600 PS quad-turbo, keeping the Veyron's leaning-back posture and dropping belt line — twenty years on, the original idea is reborn in a new form.</p>
+      </div>
+    </div>
+
+    <div class="media-row reveal">
+      <div class="media-row__media">
+        <img src="img/fkp-01.jpg" alt="Bugatti F.K.P. Hommage" loading="lazy">
+      </div>
+      <div class="media-row__body">
+        <span class="lbl">Legacy · 2026</span>
+        <h3>An Homage, Twenty Years On</h3>
+        <p>Unveiled at Rétromobile Paris in January 2026 alongside the original Veyron 16.4. The three-dimensional horseshoe grille is machined from a solid block of aluminium; the red exterior finish uses advanced layering — a silver aluminium-based coat beneath a red-tinted clear coat, creating extraordinary depth as light moves across it. A circular, Bauhaus steering wheel and an Audemars Piguet timepiece set into the dashboard — every detail honours Piëch's 1997 idea.</p>
+      </div>
+    </div>
+
+    <div class="figrow reveal">
+      <figure class="figure">
+        <div class="figure__media"><img src="img/fkp-side.jpg" alt="Two generations side by side" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">01</span><span class="zh">Two generations — the 16.4 of 2005 and the F.K.P. Hommage of 2026.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/fkp-design.jpg" alt="F.K.P. Hommage design study" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">02</span><span class="zh">Design — A. Schmid and the Bugatti design team.</span></figcaption>
+      </figure>
+      <figure class="figure">
+        <div class="figure__media"><img src="img/fkp20-parade.jpg" alt="Paris night parade" loading="lazy"></div>
+        <figcaption class="figure__cap"><span class="no">03</span><span class="zh">Rétromobile Paris — historic Bugattis parade along the Seine.</span></figcaption>
+      </figure>
+    </div>
+
+    <figure class="figure reveal">
+      <div class="figure__media">
+        <img src="img/fkp-04.jpg" alt="The 20 ANS badge of the F.K.P. Hommage" loading="lazy">
+      </div>
+      <figcaption class="figure__cap">
+        <span class="no">04</span>
+        <span class="zh">"20 ANS" — twenty years on, the Veyron's legacy continues.</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============ 07 Specifications ============ -->
+<div class="chapter-break" id="specs" data-chapter>
+  <span class="chapter-break__wm" aria-hidden="true">07</span>
+  <div class="chapter-break__inner">
+    <span class="chapter-break__no">07</span>
+    <div>
+      <h2>Specifications<span class="latin">Specifications</span></h2>
+      <p class="chapter-break__sub">W16 · 8.0 litres · four turbochargers · all-wheel drive. Data from official Bugatti press releases and the 2005 technical specification.</p>
+    </div>
+  </div>
+</div>
+
+<section class="chapter">
+  <div class="wrap">
+    <div class="gauges">
+      <figure class="gauge reveal" data-gauge="1001" data-max="1200" data-decimals="0" data-unit="PS">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">PS</span></figcaption>
+        </div>
+        <p class="gauge__label">Max Power<small>Veyron 16.4 · @ 6,000 rpm</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="1250" data-max="1500" data-decimals="0" data-unit="Nm">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">Nm</span></figcaption>
+        </div>
+        <p class="gauge__label">Max Torque<small>@ 2,200–5,500 rpm</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="407" data-max="431" data-decimals="0" data-unit="km/h">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">km/h</span></figcaption>
+        </div>
+        <p class="gauge__label">Top Speed<small>Speed Key · first past 400</small></p>
+      </figure>
+      <figure class="gauge reveal" data-gauge="2.5" data-max="3.0" data-decimals="1" data-unit="s">
+        <div class="gauge__svg">
+          <svg viewBox="0 0 200 200"><circle class="gauge__track" cx="100" cy="100" r="84"/><circle class="gauge__bar" cx="100" cy="100" r="84"/></svg>
+          <figcaption><b class="mono">0</b><span class="gauge__unit mono">s</span></figcaption>
+        </div>
+        <p class="gauge__label">0–100 km/h<small>Design target: under 3 seconds</small></p>
+      </figure>
+    </div>
+
+    <div class="specs-tabs reveal" id="specsTabs">
+      <div class="specs-tabs__nav" role="tablist">
+        <button class="specs-tabs__btn is-on" data-tab="general" role="tab">General</button>
+        <button class="specs-tabs__btn" data-tab="powertrain" role="tab">Powertrain</button>
+        <button class="specs-tabs__btn" data-tab="chassis" role="tab">Chassis</button>
+        <button class="specs-tabs__btn" data-tab="performance" role="tab">Performance</button>
+      </div>
+      <div class="specs-tabs__panel is-on" data-panel="general">
+        <div class="specs__group">
+          <div class="specs__row"><span class="k">Length · 全长</span><span class="v">4,462<span class="unit">mm</span></span></div>
+          <div class="specs__row"><span class="k">Width · 车宽</span><span class="v">1,998<span class="unit">mm</span></span></div>
+          <div class="specs__row"><span class="k">Height · 车高</span><span class="v">1,206<span class="unit">mm</span></span></div>
+          <div class="specs__row"><span class="k">Wheelbase · 轴距</span><span class="v">2,710<span class="unit">mm</span></span></div>
+          <div class="specs__row specs__row--hl"><span class="k">Kerb weight (DIN) · 整备质量</span><span class="v">1,888<span class="unit">kg</span></span></div>
+          <div class="specs__row"><span class="k">Body structure · 车身结构</span><span class="v">Carbon monocoque · 110 kg</span></div>
+          <div class="specs__row"><span class="k">Torsional rigidity · 扭转刚度</span><span class="v">60,000<span class="unit">Nm/°</span></span></div>
+          <div class="specs__row"><span class="k">Fuel tank · 油箱</span><span class="v">100<span class="unit">L</span></span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="powertrain">
+        <div class="specs__group">
+          <div class="specs__row"><span class="k">Engine · 发动机</span><span class="v">W16 · Mid-mounted</span></div>
+          <div class="specs__row"><span class="k">Displacement · 排量</span><span class="v">7,993<span class="unit">cm³</span></span></div>
+          <div class="specs__row"><span class="k">Valves per cylinder · 每缸气门</span><span class="v">4</span></div>
+          <div class="specs__row"><span class="k">Turbocharging · 增压</span><span class="v">Quad-turbo · water/air intercooled</span></div>
+          <div class="specs__row specs__row--hl"><span class="k">Power · 最大功率</span><span class="v">1,001<span class="unit">PS @ 6,000 rpm</span></span></div>
+          <div class="specs__row specs__row--hl"><span class="k">Torque · 最大扭矩</span><span class="v">1,250<span class="unit">Nm @ 2,200–5,500 rpm</span></span></div>
+          <div class="specs__row"><span class="k">Transmission · 变速箱</span><span class="v">7-speed DSG</span></div>
+          <div class="specs__row"><span class="k">Drive · 驱动</span><span class="v">All-wheel drive</span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="chassis">
+        <div class="specs__group">
+          <div class="specs__row"><span class="k">Suspension · 悬挂</span><span class="v">Double wishbone · F/R</span></div>
+          <div class="specs__row"><span class="k">Front brakes · 前刹</span><span class="v">Carbon-ceramic · 8-piston</span></div>
+          <div class="specs__row"><span class="k">Rear brakes · 后刹</span><span class="v">Carbon-ceramic · 6-piston</span></div>
+          <div class="specs__row"><span class="k">Front tyres · 前轮</span><span class="v">265/30 R19</span></div>
+          <div class="specs__row"><span class="k">Rear tyres · 后轮</span><span class="v">365/30 R20</span></div>
+          <div class="specs__row"><span class="k">Aerodynamics · 空气动力学</span><span class="v">Active · transforms at 220 km/h</span></div>
+          <div class="specs__row"><span class="k">Speed Key · 极速钥匙</span><span class="v">Unlocks top speed</span></div>
+        </div>
+      </div>
+      <div class="specs-tabs__panel" data-panel="performance">
+        <div class="specs__group">
+          <div class="specs__row specs__row--hl"><span class="k">Top speed · 极速</span><span class="v">407<span class="unit">km/h (Speed Key)</span></span></div>
+          <div class="specs__row"><span class="k">Top speed (standard mode) · 极速(标准模式)</span><span class="v">375<span class="unit">km/h</span></span></div>
+          <div class="specs__row specs__row--hl"><span class="k">0–100 km/h</span><span class="v">2.5<span class="unit">s</span></span></div>
+          <div class="specs__row"><span class="k">Design target 0–100 km/h · 设计目标</span><span class="v">&lt; 3<span class="unit">s</span></span></div>
+          <div class="specs__row"><span class="k">Total production · 量产总量</span><span class="v">450<span class="unit">cars · 2005–2015</span></span></div>
+          <div class="specs__row"><span class="k">First past 400 km/h · 首破 400</span><span class="v">2005-04-19<span class="unit">Ehra-Lessien</span></span></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="fine reveal">
+      Technical data from official Bugatti press releases, the 2005 Veyron 16.4 technical specification and officially published figures.
+      <a href="https://newsroom.bugatti.com/models/veyron" target="_blank" rel="noopener">Source: BUGATTI NEWSROOM · Veyron →</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ Footer (same as Divo) ============ -->
+<footer class="footer">
+  <div class="footer__portal">
+    <div class="footer__portal-inner">
+      <p class="footer__portal-kicker mono">MORE LEGENDS</p>
+      <p class="footer__portal-title">HYPERCAR<span class="footer__portal-dot">.</span>SITE</p>
+      <p class="footer__portal-sub">Hypercar Legends — collection site</p>
+      <a class="footer__portal-btn mono" href="https://www.hypercar.site" target="_blank" rel="noopener">Visit Hypercar →</a>
+    </div>
+  </div>
+  <div class="footer__contact">
+    <span class="footer__contact-label mono">CONTACT</span>
+    <div class="footer__contact-btns">
+      <a class="sbtn sbtn--bili" href="https://space.bilibili.com/675250962" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M7.1 2.6 8.9.8l2.1 2.1L13.1.8l1.8 1.8-1.7 1.7h2.5c1.9 0 3.4 1.5 3.4 3.4v8.6c0 1.9-1.5 3.4-3.4 3.4H6.3c-1.9 0-3.4-1.5-3.4-3.4V7.7c0-1.9 1.5-3.4 3.4-3.4h2.5L7.1 2.6zM7.6 4.3H6.3c-1.3 0-2.4 1.1-2.4 2.4v8.6c0 1.3 1.1 2.4 2.4 2.4h11.4c1.3 0 2.4-1.1 2.4-2.4V6.7c0-1.3-1.1-2.4-2.4-2.4h-1.3l1.2-1.2-.9-.9-2.2 2.2-2.2-2.2-.9.9 1.2 1.2H7.6z"/><circle cx="9.4" cy="12.6" r="1.5"/><circle cx="14.6" cy="12.6" r="1.5"/></svg>
+        <span class="sbtn__txt"><b>BILIBILI</b><small>@HybridV16 · Bilibili channel</small></span>
+        <i class="sbtn__arrow">→</i>
+      </a>
+      <a class="sbtn sbtn--yt" href="https://www.youtube.com/@HybridV16" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M23.5 7.2s-.2-1.7-.9-2.4c-.9-.9-1.9-.9-2.4-1C16.9 3.5 12 3.5 12 3.5s-4.9 0-8.2.3c-.5.1-1.5.1-2.4 1-.7.7-.9 2.4-.9 2.4S.3 9.2.3 11.2v1.6c0 2 .2 4 .2 4s.2 1.7.9 2.4c.9.9 2.1.9 2.6 1 1.9.2 7.9.3 7.9.3s4.9 0 8.2-.3c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.4.9-2.4s.2-2 .2-4v-1.6c0-2-.2-4-.2-4zM9.7 15.4V8.2l6.4 3.6-6.4 3.6z"/></svg>
+        <span class="sbtn__txt"><b>YOUTUBE</b><small>@HybridV16 · YouTube channel</small></span>
+        <i class="sbtn__arrow">→</i>
+      </a>
+    </div>
+  </div>
+  <div class="footer__top">
+    <p class="footer__brand mono">BUGATTI · VEYRON</p>
+    <p class="footer__links mono">
+      <a href="index.html">中文</a><a href="en.html">English</a>
+    </p>
+  </div>
+  <div class="footer__disclaimer">
+    <p>This is a fan-made informational site. Content, images and videos are sourced from official Bugatti press releases and the official website, for educational and display purposes. Bugatti, Veyron and related trademarks and imagery are owned by Bugatti Automobiles S.A.S. Performance figures are as officially published.</p>
+    <p class="mono">Image source: <a href="https://newsroom.bugatti.com" target="_blank" rel="noopener">BUGATTI NEWSROOM</a> — MOLSHEIM · 1997 → 2026</p>
+  </div>
+</footer>
+
+<script src="js/lang-detect.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
