@@ -308,7 +308,7 @@
         }
         var b = breaks[cur];
         if (b) {
-          var t = b.querySelector('.chapter-break__no');
+          var t = b.querySelector('.chapter-break__no') || b.querySelector('.ch-head__tag');
           var h = b.querySelector('h2');
           nowEl.textContent = (t ? t.textContent.trim() : '') + ' · ' +
             (h ? h.childNodes[0].textContent.trim() : '');

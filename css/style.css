@@ -534,8 +534,8 @@ button { font-family: inherit; cursor: pointer; }
 
 /* ---------- 360° 旋转(scroll scrub,官网同款) ---------- */
 .scrub { position: relative; }
-/* 320vh:滚动 320vh 转 360°,缓速从容;配合 JS 弹簧惯性更丝滑 */
-.scrub__track { position: relative; height: 320vh; }
+/* 400vh:滚动 400vh 转 360°,缓速从容;配合 JS 弹簧惯性更丝滑 */
+.scrub__track { position: relative; height: 400vh; }
 .scrub__sticky {
   position: sticky;
   top: 0;
@@ -885,13 +885,14 @@ button { font-family: inherit; cursor: pointer; }
 .stat b em { font-style: normal; color: var(--accent-soft); }
 .stat span {
   display: block;
-  margin-top: .5rem;
+  margin-top: .45rem;
   font-family: var(--font-mono);
-  font-size: .74rem;
-  letter-spacing: .26em;
+  font-size: .62rem;
+  letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--ink-faint);
 }
+@media (max-width: 980px) { .stats { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 720px) { .stats { grid-template-columns: repeat(2, 1fr); } }
 
 /* ---------- 图文交替(divo 风格) ---------- */
@@ -1542,7 +1543,7 @@ button { font-family: inherit; cursor: pointer; }
   gap: 7px;
   background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
 }
-.bigstats__item b { font-size: clamp(30px, 3.6vw, 44px); font-weight: 400; color: #fff; line-height: 1; font-family: var(--font-display); }
+.bigstats__item b { font-size: clamp(24px, 3vw, 34px); font-weight: 400; color: #fff; line-height: 1.15; font-family: var(--font-display); white-space: nowrap; }
 .bigstats__item b em { font-style: normal; color: var(--accent-soft); }
 .bigstats__item span { font-size: 12.5px; color: var(--ink-faint); letter-spacing: 0.2em; text-transform: uppercase; font-family: var(--font-mono); }
 
@@ -1664,8 +1665,70 @@ button { font-family: inherit; cursor: pointer; }
    - hero wordmark 为内联 SVG(白色文字),取消 invert 反色
    - figrow--4 两列布局(传奇版四图)
    ============================================================ */
-.hero__wordmark { filter: none; height: auto; }
-.figrow--4 { grid-template-columns: repeat(2, 1fr); }
+.hero__wordmark { filter: none; height: auto; text-shadow: 0 4px 44px rgba(0,0,0,.85); }
+.hero__mini { color: rgba(242,242,245,.96); text-shadow: 0 2px 22px rgba(0,0,0,.95); }
+.hero__veil {
+  background:
+    linear-gradient(to bottom, rgba(5,5,7,.62) 0%, rgba(5,5,7,.2) 42%, rgba(5,5,7,.97) 100%),
+    linear-gradient(to right, rgba(5,5,7,.55), transparent 62%);
+}
+/* 传奇版六卡折叠(3×2 紧凑) */
+.legends-mini {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: clamp(1.6rem, 4vh, 2.6rem) 0;
+}
+.lmini {
+  border: 1px solid var(--line-soft);
+  border-top: 2px solid var(--accent);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  transition: border-color 0.4s, transform 0.4s var(--ease), box-shadow 0.4s;
+}
+.lmini:hover {
+  border-color: rgba(255, 90, 99, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px -18px rgba(228, 12, 23, 0.5);
+}
+.lmini summary {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px 20px 14px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  position: relative;
+}
+.lmini summary::-webkit-details-marker { display: none; }
+.lmini summary::after {
+  content: '+';
+  position: absolute;
+  right: 18px;
+  top: 16px;
+  font-family: var(--font-mono);
+  font-size: 16px;
+  color: var(--accent-soft);
+  transition: transform 0.3s var(--ease);
+}
+.lmini[open] summary::after { transform: rotate(45deg); }
+.lmini__top { display: flex; align-items: center; gap: 8px; padding-right: 22px; }
+.lmini__year { font-family: var(--font-mono); font-size: 11px; color: var(--ink-faint); letter-spacing: 0.2em; white-space: nowrap; }
+.lmini__year::before { content: ''; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); margin-right: 8px; vertical-align: 1px; }
+.lmini b { font-family: var(--font-display); font-weight: 400; font-size: 19px; letter-spacing: 0.02em; line-height: 1.2; }
+.lmini__num { font-style: normal; font-family: var(--font-mono); font-size: 12px; color: var(--accent-soft); letter-spacing: 0.14em; margin-left: auto; white-space: nowrap; }
+.lmini p { padding: 0 20px 18px; color: var(--ink-dim); font-size: 13.5px; line-height: 1.8; border-top: 1px solid var(--line-soft); margin: 0 0 0; padding-top: 14px; }
+@media (max-width: 980px) {
+  .legends-mini { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 860px) {
+  .legends-mini { grid-template-columns: 1fr; }
+  .lmini b { font-size: 17px; }
+}
+/* 传奇版四图一行 */
+.figrow--4 { grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 980px) { .figrow--4 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px) { .figrow--4 { grid-template-columns: 1fr; } }
 /* 传奇版六卡 3×2 整齐排列 */
 .hcards--3 { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 860px) { .hcards--3 { grid-template-columns: 1fr; } }
