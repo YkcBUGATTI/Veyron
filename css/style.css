@@ -1732,3 +1732,67 @@ button { font-family: inherit; cursor: pointer; }
 /* 传奇版六卡 3×2 整齐排列 */
 .hcards--3 { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 860px) { .hcards--3 { grid-template-columns: 1fr; } }
+/* ---------- HYPERCAR 门户跳转 ---------- */
+.portal-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  max-width: calc(100% - 48px);
+  margin: 52px auto 20px;
+  padding: 15px 40px;
+  border: 1.5px solid var(--accent, var(--blue-lux, var(--red, var(--gold))));
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.045);
+  color: var(--ink-dim, var(--dim));
+  font-family: var(--font-mono, var(--mono));
+  font-size: 11.5px;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  transition: border-color .35s, color .35s, background .35s, transform .35s;
+}
+.portal-bar:hover { transform: translateY(-2px); background: rgba(255, 255, 255, 0.09); }
+.portal-bar__rule {
+  width: 36px;
+  height: 1px;
+  flex: none;
+  background: linear-gradient(90deg, transparent, var(--accent, var(--blue-lux, var(--red, var(--gold)))));
+}
+.portal-bar__rule--r { background: linear-gradient(90deg, var(--accent, var(--blue-lux, var(--red, var(--gold)))), transparent); }
+.portal-bar__badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 7px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  background: var(--accent, var(--blue-lux, var(--red, var(--gold))));
+  color: #0b0b0e;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 0 14px var(--accent, var(--blue-lux, var(--red, var(--gold))));
+}
+.portal-bar__name {
+  color: var(--accent, var(--blue-lux, var(--red, var(--gold))));
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  white-space: nowrap;
+}
+.portal-bar__sep {
+  width: 1px;
+  height: 16px;
+  flex: none;
+  background: var(--line);
+}
+.portal-bar__text {
+  color: var(--ink-dim, var(--dim));
+  letter-spacing: 0.12em;
+  white-space: nowrap;
+}
+.portal-bar__arrow { font-style: normal; transition: transform .35s; }
+.portal-bar:hover .portal-bar__arrow { transform: translateX(4px); }
+@media (max-width: 720px) {
+  .portal-bar { flex-wrap: wrap; justify-content: center; text-align: center; margin: 30px 20px 14px; padding: 13px 26px; gap: 12px; }
+  .portal-bar__rule { display: none; }
+  .portal-bar__text { white-space: normal; }
+}
