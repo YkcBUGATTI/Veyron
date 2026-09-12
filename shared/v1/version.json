@@ -1,0 +1,12 @@
+{
+  "_note": "由 tools/sync_shared.py 生成,请勿手改;改共享代码后重跑 --update-version",
+  "name": "hypercar-shared",
+  "version": "v1",
+  "hash": "199e084b720979c33eaa7d718888150909c80ca6c3343e4dc59653908bf3530b",
+  "generated": "2026-09-12",
+  "files": {
+    "components.css": "dda33c0dc3706e03eb873d1e4d5588ab79d23f8e7cab457c16721a998e0040b3",
+    "lang.js": "cc2024b6591bbc3bbd77f1d6027fa8ab3d6f311d9e44284508a975693bff7227",
+    "tokens.css": "378a9f71a7cb77e51614e1946e28dae5af6616eb10650db9f4c83334c14b4022"
+  }
+}

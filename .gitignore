@@ -1,3 +1,23 @@
 _review/
 _review2/
 img/_discard/
+
+# --- hypercar 统一忽略规则(由 tools/add_gitignore.py 维护)---
+# 过程产物与原始素材:不参与线上渲染,不应进仓库
+_src/
+_scrape/
+_shots/
+_shots2/
+_shots3/
+_shots4/
+_shots5/
+materials/
+cache/
+_legacy/
+video/raw/
+_meta/raw/
+__pycache__/
+*.pyc
+*.log
+*.tmp
+*.bak

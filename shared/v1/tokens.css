@@ -1,0 +1,81 @@
+/* ==========================================================================
+   shared/v1/tokens.css — hypercar 站点群设计令牌契约
+   --------------------------------------------------------------------------
+   这里是**变量名与含义的定义**,不放品牌值。各站的 theme.css 只覆盖值,不改名。
+
+   用法(站点 HTML 中的引用顺序):
+     <link rel="stylesheet" href="shared/v1/tokens.css">
+     <link rel="stylesheet" href="theme.css">      <!-- 品牌色/字体,覆盖上面的值 -->
+     <link rel="stylesheet" href="page.css">       <!-- 本站特有组件 -->
+
+   收敛背景:此前 17 个站存在两套并行的变量命名(实测):
+     方言 A(veyron-site)  --bg --bg-soft --panel --ink --ink-dim --ink-faint
+                          --accent --accent-soft --line --line-soft --glass
+                          --ease --font-display --font-text --font-mono
+     方言 B(f80/499p/hypercar/tourbillon 等)
+                          --bg --bg2 --panel --panel2 --txt --dim --faint
+                          --line --line2 --red --red-soft --sans --mono
+                          --display --ease --ease2
+   本文件采用**方言 A 作为规范名**(语义更清晰:ink=文字、accent=强调色),
+   方言 B → 规范名的映射见 shared/README.md。
+   ========================================================================== */
+
+:root {
+  /* ---- 表面:层级由深到浅 ---- */
+  --bg:          #050608;   /* 页面底色,近黑 */
+  --bg-soft:     #090c10;   /* 次级底(章节交替、区块底) */
+  --panel:       #10141b;   /* 卡片/面板底 */
+  --panel-2:     #161b24;   /* 面板上的再一层(悬停、内嵌) */
+
+  /* ---- 文字:三级层次 ---- */
+  --ink:         #f1f3f5;   /* 主文字 */
+  --ink-dim:     #a7adb6;   /* 次要文字 */
+  --ink-faint:   #7b828c;   /* 弱化文字、注释、标注 */
+
+  /* ---- 强调色:由各站 theme.css 覆盖 ---- */
+  --accent:      #ffffff;   /* 品牌强调色(默认中性,站点必须覆盖) */
+  --accent-soft: #cccccc;   /* 强调色的浅色态(hover、发光) */
+
+  /* ---- 分隔线 ---- */
+  --line:        rgba(255, 255, 255, 0.12);
+  --line-soft:   rgba(255, 255, 255, 0.07);
+
+  /* ---- 半透明玻璃面(导航/浮层) ---- */
+  --glass:       rgba(5, 6, 8, 0.72);
+
+  /* ---- 字体族:各站 theme.css 覆盖为主题的品牌字体 ---- */
+  --font-display: system-ui, "Segoe UI", sans-serif;  /* 标题 */
+  --font-text:    system-ui, "Segoe UI", sans-serif;  /* 正文 */
+  --font-mono:    ui-monospace, "SFMono-Regular", Consolas, monospace; /* 数据/标注 */
+
+  /* ---- 版心宽度 ---- */
+  --w-doc:   1600px;   /* 文档最大宽 */
+  --w-prose:  760px;   /* 长文段落最大宽 */
+
+  /* ---- 动效 ---- */
+  --ease:    cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-2:  cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* ---- 章节节奏:统一留白,避免各站 120/140/160px 混用 ---- */
+  --sec:     140px;    /* 章节上下留白(桌面) */
+  --sec-sm:   80px;    /* 章节上下留白(移动) */
+
+  /* ---- 层级 ---- */
+  --z-nav:    100;
+  --z-overlay: 200;
+  --z-cursor:  300;
+}
+
+/* 移动端节奏降档。各站如另设断点,以其为准,不必强改。 */
+@media (max-width: 980px) {
+  :root { --sec: var(--sec-sm); }
+}
+
+/* 尊重系统降低动效偏好:令牌级别关掉过渡时长,
+   站点组件只要用 var(--ease) 就自动跟随。 */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ease:   linear;
+    --ease-2: linear;
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://veyron.hypercar.site/sitemap.xml
